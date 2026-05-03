@@ -4,9 +4,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button, Spinner } from '@heroui/react';
 
-const FeaturedTilesSection = () => {
+const CowSection = () => {
 
-    const [tiles, setTiles] = useState([]);
+    const [cows, setCows] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -14,7 +14,7 @@ const FeaturedTilesSection = () => {
         fetch('/data.json')
             .then(res => res.json())
             .then(data => {
-                setTiles(data);
+                setCows(data);
                 setLoading(false);
             })
             .catch(error => {
@@ -34,25 +34,25 @@ const FeaturedTilesSection = () => {
 
     return (
         <div className='container mx-auto my-10 px-4'>
-            <h2 className='text-3xl font-bold text-center mb-8 text-teal-600'>Featured Tiles</h2>
+            <h2 className='text-3xl font-bold text-center mb-8 text-teal-600'>Many Cows</h2>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
-                {tiles.slice(0, 4).map((tile) => (
-                    <div key={tile.id} className='bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow'>
+                {cows.slice(0, 4).map((cow) => (
+                    <div key={cow.id} className='bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow'>
                         <div className='relative h-64'>
                             <Image
-                                src={tile.image}
-                                alt={tile.title}
+                                src={cow.image}
+                                alt={cow.name}
                                 fill
                                 className='object-cover'
                             />
                         </div>
 
                         <div className='p-4'>
-                            <h3 className='text-lg font-bold text-gray-800'>{tile.title}</h3>
-                            <p className='text-teal-600 font-semibold text-xl mt-2'>${tile.price}</p>
+                            <h3 className='text-lg font-bold text-gray-800'>{cow.name}</h3>
+                            <p className='text-teal-600 font-semibold text-xl mt-2'>Tk : {cow.price}</p>
 
-                            <Link href={`/tiles/${tile.id}`}>
+                            <Link href={`/tiles/${cow.id}`}>
                                 <Button className='w-full mt-4 bg-teal-600 text-white hover:bg-teal-700'>
                                     View Details
                                 </Button>
@@ -64,7 +64,7 @@ const FeaturedTilesSection = () => {
 
             <Link href={"/all-tiles"}>
                 <Button className='w-full mt-4'>
-                    See All Tiles
+                    See All Animals
                 </Button>
             </Link>
 
@@ -72,4 +72,4 @@ const FeaturedTilesSection = () => {
     );
 };
 
-export default FeaturedTilesSection;
+export default CowSection;

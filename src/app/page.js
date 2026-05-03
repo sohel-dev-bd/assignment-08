@@ -1,15 +1,15 @@
 import Banner from "@/components/Banner";
-import FeaturedTilesSection from "@/components/FeaturedTilesSection";
+import CowSection from "@/components/CowSection";
 import NewsMarquee from "@/components/NewsMarquee";
-import FeaturedTiles from "@/components/NewsMarquee";
+
 
 
 export default function Home() {
   return (
     <div>
-      <Banner/>
+      <Banner />
       <NewsMarquee />
-      <FeaturedTilesSection />
+      <CowSection />
     </div>
   );
 }

@@ -9,10 +9,10 @@ const Footer = () => {
 
                 <div className="space-y-4">
                     <h2 className="text-2xl font-bold text-white tracking-tight">
-                        Tiles<span className="text-teal-500"> Gallery</span>
+                        Qurbani<span className="text-teal-500"> Hat</span>
                     </h2>
                     <p className="text-sm leading-relaxed text-slate-400">
-                        Discover your perfect aesthetic with our premium collection of interior and architectural tiles. Quality and elegance for your dream home.
+                       “কোরবানি আমাদের শেখায়—ত্যাগের মধ্যেই রয়েছে প্রকৃত সফলতা। যে ব্যক্তি আল্লাহর পথে ত্যাগ করতে পারে, আল্লাহ তাকে দুনিয়া ও আখিরাতে উত্তম প্রতিদান দান করেন।”
                     </p>
 
                     <div className="flex space-x-4 pt-2">
@@ -54,15 +54,15 @@ const Footer = () => {
                     <ul className="space-y-4 text-sm">
                         <li className="flex items-start space-x-3">
                             <FaMapMarkerAlt className="text-teal-500 mt-1" />
-                            <span>Dhaka Uddan, Mohammadpur, Dhaka - 1207</span>
+                            <span>688, Magura ,Khulna Bangladesh</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <FaPhone className="text-teal-500" />
-                            <span>+8801946-228026</span>
+                            <span>+880 1909 532498</span>
                         </li>
                         <li className="flex items-center space-x-3">
                             <FaEnvelope className="text-teal-500" />
-                            <span>hafezmasudranmn@gmail.com</span>
+                            <span>sohel634500@gmail.com</span>
                         </li>
                     </ul>
                 </div>
@@ -71,7 +71,7 @@ const Footer = () => {
 
 
             <div className="border-t container mx-auto border-slate-800 mt-12 pt-8 text-center text-xs text-slate-500">
-                <p><small>@ Copyright 2026. Tiles Gallery. All rights reserved.</small></p>
+                <p><small>@ Copyright 2026. QurbaniHat. All rights reserved.</small></p>
             </div>
         </footer>
     );

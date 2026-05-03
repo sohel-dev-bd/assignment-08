@@ -45,8 +45,8 @@ const Navbar = () => {
             <div className='container mx-auto flex justify-between items-center px-4 md:px-6 lg:px-8'>
 
                 <div className='flex gap-2 md:gap-3 items-center'>
-                    <Image src={'/favicon.png'} alt="Logo" width={40} height={40} className='w-8 h-8 md:w-10 md:h-10' />
-                    <h1 className='text-teal-600 text-xl md:text-2xl lg:text-3xl font-bold'>Tiles Gallery</h1>
+                    <Image src={'/cowLogo.jpg'} alt="Logo" width={40} height={40} className='w-8 h-8 md:w-10 md:h-10 rounded-full' />
+                    <h1 className='text-teal-600 text-xl md:text-2xl lg:text-3xl font-bold'>QurbaniHat</h1>
                 </div>
 
                 <ul className='hidden md:flex gap-3 lg:gap-4'>

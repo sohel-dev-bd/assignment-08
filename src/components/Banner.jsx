@@ -22,22 +22,22 @@ const Banner = () => {
                 loop={true}
             >
                 <SwiperSlide>
-                    <Image src={'/tiles_cover_01.png'} alt='Slider 01' width={1920} height={600} className="w-full h-50 md:h-85 lg:h-105 rounded-2xl object-cover" />
+                    <Image src={'/cow-banner-01-.jpg'} alt='Slider 01' width={1920} height={600} className="w-full h-50 md:h-85 lg:h-105 rounded-2xl object-cover" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <Image src={'/tiles_cover_02.png'} alt='Slider 02' width={1920} height={600} className="w-full h-50 md:h-85 lg:h-105 rounded-2xl object-cover" />
+                    <Image src={'/cow-banner-02-.jpg'} alt='Slider 02' width={1920} height={600} className="w-full h-50 md:h-85 lg:h-105 rounded-2xl object-cover" />
                 </SwiperSlide>
 
                 <SwiperSlide>
-                    <Image src={'/tiles_cover_03.png'} alt='Slider 03' width={1920} height={600} className="w-full h-50 md:h-85 lg:h-105 rounded-2xl object-cover" />
+                    <Image src={'/cow-banner-03-.jpg'} alt='Slider 03' width={1920} height={600} className="w-full h-50 md:h-85 lg:h-105 rounded-2xl object-cover" />
                 </SwiperSlide>
             </Swiper>
 
             <div className='absolute inset-0 flex flex-col items-center justify-center z-10'>
                 <div className='flex flex-col justify-center items-center space-y-3'>
-                    <div className='bg-teal-700/90 px-5 py-1  rounded-full flex justify-center items-center'>
-                        <h1 className='text-xl md:text-2xl lg:text-4xl font-bold text-white'>Discover Your Perfect Aesthetic</h1>
+                    <div className='bg-blue-300 px-5 py-1  rounded-full flex justify-center items-center'>
+                        <h1 className='text-xl md:text-2xl lg:text-2xl font-bold text-white'>👉 “Browse Verified Qurbani Animals, Compare Prices, and Contact Sellers Directly.”</h1>
                     </div>
                     <Link href={'/all-tiles'}>
                         <Button>Browse Now</Button>

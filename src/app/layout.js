@@ -12,7 +12,7 @@ export const metadata = {
   title: "Tiles Gallery",
   description: "Tiles Gallery is a modern, high-performance web application designed to showcase a premium collection of interior and architectural tiles. Built with Next.js, it offers a seamless experience for users to browse, search, and explore detailed tile specifications in a visually aesthetic environment.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/cowLogo.jpg",
   },
 };
 
