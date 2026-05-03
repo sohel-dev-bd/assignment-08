@@ -54,7 +54,7 @@ const Navbar = () => {
                         <NavLink href={'/'}>Home</NavLink>
                     </li>
                     <li className='font-semibold'>
-                        <NavLink href={'/all-tiles'}>All Tiles</NavLink>
+                        <NavLink href={'/all-tiles'}>All Animals</NavLink>
                     </li>
                     <li className='font-semibold'>
                         <NavLink href={'/my-profile'}>My Profile</NavLink>
