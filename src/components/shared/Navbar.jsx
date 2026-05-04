@@ -50,7 +50,7 @@ const Navbar = () => {
                 </div>
 
                 <ul className='hidden md:flex gap-3 lg:gap-4'>
-                    <li className='font-semibold'>
+                    <li className=' font-semibold'>
                         <NavLink href={'/'}>Home</NavLink>
                     </li>
                     <li className='font-semibold'>
@@ -90,10 +90,10 @@ const Navbar = () => {
                             ) : (
                                 <>
                                     <Link href={'/register'}>
-                                        <Button size="sm" className='md:size-default'>Sign Up</Button>
+                                        <Button size="sm" className= 'bg-green-500 md:size-default'>Sign Up</Button>
                                     </Link>
                                     <Link href={'/login'}>
-                                        <Button size="sm" className='md:size-default'>Sign In</Button>
+                                        <Button size="sm" className='bg-green-600 md:size-default'>Sign In</Button>
                                     </Link>
                                 </>
                             )}

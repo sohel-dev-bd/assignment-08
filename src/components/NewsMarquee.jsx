@@ -9,13 +9,13 @@ const marqueeText = [
 const NewsMarquee = () => {
     return (
         <div className='w-[90%] md:w-[90%] lg:w-[90%]  mx-auto bg-accent/80 rounded-l-lg rounded-r-lg text-white flex justify-between items-center gap-1'>
-            <p className='bg-green-300 px-2 rounded-l-lg'>Update: </p>
+            <p className='bg-red-500 px-2 text-bold rounded-l-lg'>Update: </p>
             <Marquee
                 pauseOnHover={true}
                 speed={50}
             >
                {marqueeText.map((text, index) => (
-                    <span key={index} className='mx-4 text-black bg'>
+                    <span key={index} className='bg-green-400 rounded-full mx-4 text-black bg'>
                         {text} 
                     </span>
                 ))}

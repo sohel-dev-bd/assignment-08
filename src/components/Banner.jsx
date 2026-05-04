@@ -36,8 +36,8 @@ const Banner = () => {
 
             <div className='absolute inset-0 flex flex-col items-center justify-center z-10'>
                 <div className='flex flex-col justify-center items-center space-y-3'>
-                    <div className='bg-blue-300 px-5 py-1  rounded-full flex justify-center items-center'>
-                        <h1 className='text-xl md:text-2xl lg:text-2xl font-bold text-white'>👉 “Browse Verified Qurbani Animals, Compare Prices, and Contact Sellers Directly.”</h1>
+                    <div className='bg-green-500 px-5 py-1  rounded-full flex justify-center items-center'>
+                        <h1 className='text-xl md:text-2xl lg:text-2xl font-bold text-black'>👉 “Browse Verified Qurbani Animals, Compare Prices, and Contact Sellers Directly.”</h1>
                     </div>
                     <Link href={'/all-tiles'}>
                         <Button>Browse Now</Button>
