@@ -80,7 +80,7 @@ const AllAnimals = () => {
                             <div className='p-4'>
                                 <h3 className='text-lg font-bold text-gray-800'>{cow.name}</h3>
                                 <p className='text-teal-600 font-semibold text-xl mt-2'>Tk: {cow.price}</p>
-                                <Link href={`/tiles/${cow.id}`}>
+                                <Link href={`/animals/${cow.id}`}>
                                     <Button className='w-full mt-4 bg-teal-600 text-white hover:bg-teal-700'>
                                         View Details
                                     </Button>

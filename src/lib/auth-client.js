@@ -5,4 +5,4 @@ export const authClient = createAuthClient({
     baseURL: "https://assignment-08-iota-three.vercel.app"
 })
 
-
+export const { signUp, signIn } = createAuthClient()
