@@ -122,7 +122,7 @@ const Navbar = () => {
                             <NavLink href={'/'} onClick={() => setMobileMenuOpen(false)}>Home</NavLink>
                         </li>
                         <li className='font-semibold py-2'>
-                            <NavLink href={'/all-tiles'} onClick={() => setMobileMenuOpen(false)}>All Animals</NavLink>
+                            <NavLink href={'/all-animals'} onClick={() => setMobileMenuOpen(false)}>All Animals</NavLink>
                         </li>
                         <li className='font-semibold py-2'>
                             <NavLink href={'/my-profile'} onClick={() => setMobileMenuOpen(false)}>My Profile</NavLink>

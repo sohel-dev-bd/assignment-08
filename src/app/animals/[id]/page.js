@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button, Spinner } from '@heroui/react';
 import { useParams } from 'next/navigation';
 
-const SingleAnimalsPage = () => {
+const SingleAnimalPage = () => {
     const { id } = useParams();
     const [cow, setCow] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -105,4 +105,4 @@ const SingleAnimalsPage = () => {
     );
 };
 
-export default SingleAnimalsPage;
+export default SingleAnimalPage;
