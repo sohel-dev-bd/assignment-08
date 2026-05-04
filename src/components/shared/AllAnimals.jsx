@@ -4,12 +4,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button, Label, SearchField, Spinner } from '@heroui/react';
 
-const AllTiles = () => {
+const AllAnimals = () => {
 
-    const [tiles, setCows] = useState([]);
+    const [cows, setCows] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [filteredTiles, setFilteredTiles] = useState([]);
-    const [searchTile, setSearchTile] = useState('');
+    const [filteredCows, setFilteredCows] = useState([]);
+    const [searchCow, setSearchCow] = useState('');
 
     useEffect(() => {
 
@@ -17,7 +17,7 @@ const AllTiles = () => {
             .then(res => res.json())
             .then(data => {
                 setCows(data);
-                setFilteredTiles(data);
+                setFilteredCows(data);
                 setLoading(false);
             })
             .catch(error => {
@@ -28,10 +28,10 @@ const AllTiles = () => {
 
     const handleSearch = (e) => {
         e.preventDefault();
-        const filtered = tiles.filter(tile =>
-            tile.title.toLowerCase().includes(searchTile.toLowerCase())
+        const filtered = cows.filter(cow =>
+            cow.type.toLowerCase().includes(searchCow.toLowerCase())
         );
-        setFilteredTiles(filtered);
+        setFilteredCows(filtered);
     };
 
     if (loading) {
@@ -50,8 +50,8 @@ const AllTiles = () => {
             <form onSubmit={handleSearch} className='mb-10'>
                 <SearchField
                     name="search"
-                    value={searchTile}
-                    onChange={setSearchTile}
+                    value={searchCow}
+                    onChange={setSearchCow}
                 >
                     <Label>Search Cows</Label>
                     <SearchField.Group>
@@ -66,13 +66,13 @@ const AllTiles = () => {
             </form>
 
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
-                {filteredTiles.length !== 0 ? (
-                    filteredTiles.map((cow) => (
+                {filteredCows.length !== 0 ? (
+                    filteredCows.map((cow) => (
                         <div key={cow.id} className='bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow'>
                             <div className='relative h-64'>
                                 <Image
-                                    src={tile.image}
-                                    alt={tile.title}
+                                    src={cow.image}
+                                    alt={cow.name}
                                     fill
                                     className='object-cover'
                                 />
@@ -98,4 +98,4 @@ const AllTiles = () => {
     );
 };
 
-export default AllTiles;
+export default AllAnimals;

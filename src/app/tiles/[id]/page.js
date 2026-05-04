@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { Button, Spinner } from '@heroui/react';
 import { useParams } from 'next/navigation';
 
-const SingleTilePage = () => {
+const SingleAnimalPage = () => {
     const { id } = useParams();
-    const [tile, setTile] = useState(null);
+    const [cow, setCow] = useState(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -15,7 +15,7 @@ const SingleTilePage = () => {
             .then(res => res.json())
             .then(data => {
                 const findTile = data.find(t => t.id === id);
-                setTile(findTile);
+                setCow(findTile);
                 setLoading(false);
             }).catch(error => {
                 console.error('Error:', error);
@@ -32,12 +32,12 @@ const SingleTilePage = () => {
         );
     }
 
-    if (!tile) {
+    if (!cow) {
         return (
             <div className='container mx-auto my-20 text-center'>
-                <h2 className='text-2xl font-bold text-gray-800'>Tile not found</h2>
+                <h2 className='text-2xl font-bold text-gray-800'>Animals not found</h2>
                 <Link href="/all-tiles">
-                    <Button className='mt-4 bg-teal-600 text-white'>Back to All Tiles</Button>
+                    <Button className='mt-4 bg-teal-600 text-white'>Back to All Animals</Button>
                 </Link>
             </div>
         );
@@ -60,25 +60,25 @@ const SingleTilePage = () => {
 
                 <div className='space-y-4'>
                     <h1 className='text-3xl font-bold text-teal-600'>
-                        {tile.title}
+                        {cow.name}
                     </h1>
 
                     <p className='text-sm text-gray-500 uppercase tracking-wide'>
-                        {tile.category} Style
+                        {cow.type} Style
                     </p>
 
                     <p className='text-gray-700 leading-relaxed'>
-                        {tile.description}
+                        {cow.description}
                     </p>
 
                     <div className='grid grid-cols-2 gap-4 text-sm mt-3'>
-                        <p><span className='font-semibold'>Material:</span> {tile.material}</p>
-                        <p><span className='font-semibold'>Size:</span> {tile.dimensions}</p>
-                        <p><span className='font-semibold'>Price:</span> {tile.price} {tile.currency}</p>
+                        <p><span className='font-semibold'>Material:</span> {cow.material}</p>
+                        <p><span className='font-semibold'>Size:</span> {cow.dimensions}</p>
+                        <p><span className='font-semibold'>Price:</span> {cow.price} {cow.currency}</p>
                         <p>
                             <span className='font-semibold'>Stock:</span>{" "}
-                            <span className={tile.inStock ? "text-green-600" : "text-red-500"}>
-                                {tile.inStock ? "Available" : "Out of Stock"}
+                            <span className={cow.inStock ? "text-green-600" : "text-red-500"}>
+                                {cow.inStock ? "Available" : "Out of Stock"}
                             </span>
                         </p>
                     </div>
@@ -105,4 +105,4 @@ const SingleTilePage = () => {
     );
 };
 
-export default SingleTilePage;
+export default SingleAnimalPage;

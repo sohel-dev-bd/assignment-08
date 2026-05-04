@@ -1,10 +1,12 @@
-import AllTiles from "@/components/shared/AllTiles";
+import AllAnimals from "@/components/shared/AllAnimals";
+
+
 
 const page = () => {
     return (
 
         <div>
-            <AllTiles/>
+            <AllAnimals />
         </div>
     );
 };
