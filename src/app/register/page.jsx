@@ -73,7 +73,7 @@ export default function RegisterPage() {
           }}
         >
           <Label>Email</Label>
-          <Input placeholder="masudurrahman@gmail.com" />
+          <Input placeholder="sohel634500@gmail.com" />
           <FieldError />
         </TextField>
 
@@ -118,7 +118,7 @@ export default function RegisterPage() {
       <div className="text-center mt-4 pt-4 border-t">
         <p className="text-sm text-gray-600">
           Already have an account? {' '}
-          <Link href="/login" className="text-teal-600 hover:text-teal-700 font-semibold">
+          <Link href="/login" className="text-green-600 hover:text-teal-700 font-semibold">
             Login
           </Link>
         </p>

@@ -9,8 +9,8 @@ const robotoFont = Roboto({
 });
 
 export const metadata = {
-  title: "Tiles Gallery",
-  description: "Tiles Gallery is a modern, high-performance web application designed to showcase a premium collection of interior and architectural tiles. Built with Next.js, it offers a seamless experience for users to browse, search, and explore detailed tile specifications in a visually aesthetic environment.",
+  title: "QurbaniHat",
+  description: "QurbaniHat is a modern and reliable online marketplace designed for buying and selling Qurbani animals. Users can بسهولة browse cows, goats, and other livestock, view detailed information, compare prices, and choose the perfect animal for Eid-ul-Adha. Built with Next.js for fast performance and a smooth user experience.",
   icons: {
     icon: "/cowLogo.jpg",
   },
