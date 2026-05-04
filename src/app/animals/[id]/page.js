@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Button, Spinner } from '@heroui/react';
 import { useParams } from 'next/navigation';
 
-const SingleAnimalPage = () => {
+const SingleAnimalsPage = () => {
     const { id } = useParams();
     const [cow, setCow] = useState(null);
     const [loading, setLoading] = useState(true);
@@ -50,8 +50,8 @@ const SingleAnimalPage = () => {
 
                 <div className='w-auto'>
                     <Image
-                        src={tile.image}
-                        alt={tile.title}
+                        src={cow.image}
+                        alt={cow.type}
                         width={500}
                         height={500}
                         className='w-auto h-auto object-cover rounded-xl border'
@@ -91,7 +91,7 @@ const SingleAnimalPage = () => {
 
                     <div className='flex gap-4 mt-6'>
                         <Link href="/all-tiles">
-                            <Button variant="bordered">Back to All Tiles</Button>
+                            <Button variant="bordered">Back to All Animals</Button>
                         </Link>
                         <Button className='bg-teal-600 text-white hover:bg-teal-700'>
                             Buy Now
@@ -105,4 +105,4 @@ const SingleAnimalPage = () => {
     );
 };
 
-export default SingleAnimalPage;
+export default SingleAnimalsPage;
