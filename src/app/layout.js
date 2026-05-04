@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${robotoFont}h-full antialiased`}
     >
-      <body className="bg-teal-50">
+      <body className="bg-pink-200">
         <Navbar />
         {children}
         <Footer />

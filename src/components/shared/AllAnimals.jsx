@@ -53,7 +53,7 @@ const AllAnimals = () => {
                     value={searchCow}
                     onChange={setSearchCow}
                 >
-                    <Label>Search Cows</Label>
+                    <Label>Search Animals</Label>
                     <SearchField.Group>
                         <SearchField.SearchIcon />
                         <SearchField.Input
